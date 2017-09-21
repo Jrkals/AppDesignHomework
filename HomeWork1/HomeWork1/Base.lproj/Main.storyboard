@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeWork1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPR-re-Eg6">
+                                <rect key="frame" x="158" y="229" width="59" height="30"/>
+                                <state key="normal" title="Increase"/>
+                                <connections>
+                                    <action selector="increaseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ppp-ok-sxP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjM-Jj-fiX">
+                                <rect key="frame" x="170.5" y="317" width="34.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.27619611663248" green="0.28904843168135264" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eph-kn-ahj">
+                                <rect key="frame" x="155" y="390" width="65" height="30"/>
+                                <state key="normal" title="Decrease"/>
+                                <connections>
+                                    <action selector="decreaseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eah-c1-fiJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kPR-re-Eg6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="209" id="PQA-0q-OhB"/>
+                            <constraint firstItem="kPR-re-Eg6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="142" id="Wac-Go-0cp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kPR-re-Eg6" secondAttribute="trailing" constant="142" id="XA1-G7-4nQ"/>
+                            <constraint firstItem="MjM-Jj-fiX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="em6-JB-hGa"/>
+                            <constraint firstItem="MjM-Jj-fiX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hHu-qy-VvL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eph-kn-ahj" secondAttribute="bottom" constant="247" id="p9v-bm-jqX"/>
+                            <constraint firstItem="eph-kn-ahj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="pd3-lz-pBu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eph-kn-ahj" secondAttribute="trailing" constant="139" id="viu-0l-0Di"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundLink" destination="8bC-Xf-vdC" id="hbN-rz-TPO"/>
+                        <outlet property="decreaseButton" destination="eph-kn-ahj" id="Owd-fu-OoH"/>
+                        <outlet property="increaseButton" destination="kPR-re-Eg6" id="QsD-hi-aZr"/>
+                        <outlet property="valueLabel" destination="MjM-Jj-fiX" id="Q53-9f-6Sd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
